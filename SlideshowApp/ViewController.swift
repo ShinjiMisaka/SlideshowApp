@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.x=self.imageIndex
+        self.timer.invalidate()
     }
     
     let images = [UIImage(named: "apple"),UIImage(named: "onigiri"),UIImage(named: "lemon")]
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
         }
         Imageview.image = images[imageIndex]
     }
-
+    
     @IBAction func next(_ sender: Any) {
         if imageIndex==2 {
             imageIndex=0
