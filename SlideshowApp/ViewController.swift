@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var nextbutton: UIButton!
+    @IBOutlet weak var backbutton: UIButton!
+    
     let images = [UIImage(named: "apple"),UIImage(named: "onigiri"),UIImage(named: "lemon")]
     var imageIndex = 0
     var timer : Timer!
@@ -57,9 +60,13 @@ class ViewController: UIViewController {
     @IBAction func startstop(_ sender: Any) {
         
         if self.timer == nil {
+            nextbutton.isEnabled = false
+            backbutton.isEnabled = false
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(slide(_:)), userInfo: nil, repeats: true)
         }
         else{
+            nextbutton.isEnabled = true
+            backbutton.isEnabled = true
             self.timer.invalidate()
             self.timer=nil
         }

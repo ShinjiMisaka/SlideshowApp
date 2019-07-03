@@ -52,6 +52,8 @@
                     </view>
                     <connections>
                         <outlet property="Imageview" destination="anA-dj-RHC" id="YHG-v7-Ofc"/>
+                        <outlet property="backbutton" destination="gVf-7p-991" id="yV9-it-nb6"/>
+                        <outlet property="nextbutton" destination="s4b-GX-CdX" id="uwQ-E3-KdL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
