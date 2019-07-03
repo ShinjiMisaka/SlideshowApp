@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     
     let images = [UIImage(named: "apple"),UIImage(named: "onigiri"),UIImage(named: "lemon")]
     var imageIndex = 0
+    var timer : Timer!
+    var timer_sec:Float = 0
+    
+    
     
     
     
@@ -21,6 +25,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         Imageview.image=images[0]
+    }
+    
+    @objc func slide(_ timer: Timer) {
+        if imageIndex==2 {
+            imageIndex=0
+        } else {
+            imageIndex+=1
+        }
+        Imageview.image = images[imageIndex]
     }
 
     @IBAction func next(_ sender: Any) {
@@ -42,6 +55,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startstop(_ sender: Any) {
+        
+        if self.timer == nil {
+            self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(slide(_:)), userInfo: nil, repeats: true)
+        }
+        else{
+            self.timer.invalidate()
+            self.timer=nil
+        }
+        
     }
 }
 
