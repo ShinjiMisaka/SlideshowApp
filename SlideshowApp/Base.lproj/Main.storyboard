@@ -39,9 +39,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTF-AF-jpP">
-                                <rect key="frame" x="46" y="676" width="66" height="30"/>
+                                <rect key="frame" x="64" y="676" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="再生/停止"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="startstop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M2p-00-eRM"/>
                                 </connections>
@@ -54,6 +54,7 @@
                         <outlet property="Imageview" destination="anA-dj-RHC" id="YHG-v7-Ofc"/>
                         <outlet property="backbutton" destination="gVf-7p-991" id="yV9-it-nb6"/>
                         <outlet property="nextbutton" destination="s4b-GX-CdX" id="uwQ-E3-KdL"/>
+                        <outlet property="ssbuton" destination="xTF-AF-jpP" id="M4P-bK-JUP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
