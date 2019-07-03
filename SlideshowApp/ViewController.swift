@@ -13,15 +13,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextbutton: UIButton!
     @IBOutlet weak var backbutton: UIButton!
     @IBOutlet weak var ssbuton: UIButton!
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        resultViewController.x=self.imageIndex
+    }
     
     let images = [UIImage(named: "apple"),UIImage(named: "onigiri"),UIImage(named: "lemon")]
     var imageIndex = 0
     var timer : Timer!
     var timer_sec:Float = 0
-    
-    
-    
-    
     
     @IBOutlet weak var Imageview: UIImageView!
 

@@ -15,6 +15,10 @@
 		D0AB3E4422CC9E61000D5758 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3E4322CC9E61000D5758 /* apple.png */; };
 		D0AB3E4622CC9E70000D5758 /* onigiri.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3E4522CC9E70000D5758 /* onigiri.png */; };
 		D0AB3E4822CC9E77000D5758 /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3E4722CC9E77000D5758 /* lemon.png */; };
+		D0AB3E4C22CCB801000D5758 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB3E4B22CCB801000D5758 /* ResultViewController.swift */; };
+		D0AB3E4E22CCC262000D5758 /* onigiri.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3E4D22CCC262000D5758 /* onigiri.png */; };
+		D0AB3E5022CCC269000D5758 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3E4F22CCC269000D5758 /* apple.png */; };
+		D0AB3E5222CCC270000D5758 /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3E5122CCC270000D5758 /* lemon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		D0AB3E4322CC9E61000D5758 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		D0AB3E4522CC9E70000D5758 /* onigiri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onigiri.png; sourceTree = "<group>"; };
 		D0AB3E4722CC9E77000D5758 /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
+		D0AB3E4B22CCB801000D5758 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		D0AB3E4D22CCC262000D5758 /* onigiri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onigiri.png; sourceTree = "<group>"; };
+		D0AB3E4F22CCC269000D5758 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		D0AB3E5122CCC270000D5758 /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,10 @@
 		D0AB3DF322CC8EBE000D5758 = {
 			isa = PBXGroup;
 			children = (
+				D0AB3E4B22CCB801000D5758 /* ResultViewController.swift */,
+				D0AB3E5122CCC270000D5758 /* lemon.png */,
+				D0AB3E4F22CCC269000D5758 /* apple.png */,
+				D0AB3E4D22CCC262000D5758 /* onigiri.png */,
 				D0AB3DFE22CC8EBE000D5758 /* SlideshowApp */,
 				D0AB3DFD22CC8EBE000D5758 /* Products */,
 			);
@@ -133,9 +145,12 @@
 			files = (
 				D0AB3E0A22CC8EBF000D5758 /* LaunchScreen.storyboard in Resources */,
 				D0AB3E0722CC8EBF000D5758 /* Assets.xcassets in Resources */,
+				D0AB3E5222CCC270000D5758 /* lemon.png in Resources */,
+				D0AB3E4E22CCC262000D5758 /* onigiri.png in Resources */,
 				D0AB3E4622CC9E70000D5758 /* onigiri.png in Resources */,
 				D0AB3E4422CC9E61000D5758 /* apple.png in Resources */,
 				D0AB3E0522CC8EBE000D5758 /* Main.storyboard in Resources */,
+				D0AB3E5022CCC269000D5758 /* apple.png in Resources */,
 				D0AB3E4822CC9E77000D5758 /* lemon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +164,7 @@
 			files = (
 				D0AB3E0222CC8EBE000D5758 /* ViewController.swift in Sources */,
 				D0AB3E0022CC8EBE000D5758 /* AppDelegate.swift in Sources */,
+				D0AB3E4C22CCB801000D5758 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
