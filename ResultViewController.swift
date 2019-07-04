@@ -12,11 +12,12 @@ class ResultViewController: UIViewController {
     
     
     @IBOutlet weak var resultimageview: UIImageView!
-    let images = [UIImage(named: "apple"),UIImage(named: "onigiri"),UIImage(named: "lemon")]
-    var x=0
+    
+    var resultimage: UIImage?
+    
     
     override func viewDidLoad() {
-        resultimageview.image=images[x]
+        resultimageview.image=resultimage
         // Do any additional setup after loading the view.
     }
     

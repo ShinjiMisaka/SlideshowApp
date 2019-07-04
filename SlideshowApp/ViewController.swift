@@ -19,12 +19,14 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
-        resultViewController.x=self.imageIndex
+        resultViewController.resultimage=self.images[imageIndex]
         self.timer.invalidate()
     }
     
     let images = [UIImage(named: "apple"),UIImage(named: "onigiri"),UIImage(named: "lemon")]
     var imageIndex = 0
+    
+    
     var timer : Timer!
     var timer_sec:Float = 0
     
