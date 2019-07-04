@@ -20,7 +20,17 @@ class ViewController: UIViewController {
         
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.resultimage=self.images[imageIndex]
-        self.timer.invalidate()
+        
+        if self.timer != nil {
+            ssbuton.setTitle("再生", for: .normal)
+            ssbuton.setTitleColor(UIColor.blue, for: .normal)
+            nextbutton.isEnabled = true
+            backbutton.isEnabled = true
+            self.timer.invalidate()
+            self.timer=nil
+            
+        }
+        
     }
     
     let images = [UIImage(named: "apple"),UIImage(named: "onigiri"),UIImage(named: "lemon")]

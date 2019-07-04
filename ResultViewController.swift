@@ -18,6 +18,7 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         resultimageview.image=resultimage
+        
         // Do any additional setup after loading the view.
     }
     
